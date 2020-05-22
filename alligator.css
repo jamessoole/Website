@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  border: 2px dashed rgba(114, 186, 94, 0.35);
+  height: 400px;
+  background: rgba(114, 186, 94, 0.05);
+}
+
+.pirate {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 4rem;
+}
+
+.police {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.doctor {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 1rem;
+  align-self: flex-end;
+}
