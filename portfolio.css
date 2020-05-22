@@ -11,6 +11,8 @@ body, html {
     font-family: Georgia, 'Times New Roman', Times, serif;
     background: rgb(248, 248, 248);
     font: grey;
+    /* this smooth scroll doesnt work in safari */
+    scroll-behavior: smooth;
 }
 
 
@@ -53,6 +55,7 @@ body, html {
 #navbar ul {
     list-style: none;
     text-align: right;
+    padding-left: 0;
 }
 #navbar li {
     display:inline;
@@ -70,6 +73,16 @@ body, html {
     text-shadow: 0 0 5px white;
     /* text-shadow: 0 0 0.1px white, 0 0 0.11px white, 0 0 0.11px white; */
 }
+/* navbar underline */
+/* #navbar a:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    border-width: 0 0 1px;
+    border-style: solid;
+} */
 
 
 
@@ -114,22 +127,42 @@ from, to { border-color: transparent }
 
 #subtitle h2 {
     position: absolute;
-    left:40px;
-    top:40px;
+    left:35px;
+    top:35px;
     font-size: 20px;
     color:white;
-    opacity: 0.7;
-    letter-spacing: 0.05em;
-    /* font-family: league; */
-    font-family: 'League Script', garamond;
-    /* font-family: 'Kaushan Script', cursive; */
-    /* font-family: 'Cedarville Cursive', cursive; */
+    opacity: 0.5;
+    /* letter-spacing: 0.05em; */
+    letter-spacing: 0.3em;
+    font-family: 'Allura', cursive;
     transform: rotate(-5deg);
 
-    /* animation: fadee 2s; */
+}
+@media screen and (min-width: 600px) {
+    #subtitle h2 {
+        /* opacity: 0; */
+        animation: fadein 0.5s;
+        animation-fill-mode: backwards;
+        
+    }
+}
+@media screen and (max-width: 600px) {
+    #subtitle h2 {
+        /* opacity: 0; */
+        animation: fadeout 0.5s;
+        animation-fill-mode: forwards;
+        
+    }
+}
+@keyframes fadeout {
+    from {opacity: 50%}
+    to {opacity: 0%}
+}
+@keyframes fadein {
+    from {opacity: 0%}
+    to {opacity: 50%}
 }
 
-/* @keyframes fad */
 
 
 
@@ -218,9 +251,35 @@ from, to { border-color: transparent }
 .descrip {
     margin: 0% 20%;
     text-align: justify;
+    /* text-align-last: justify; */
     color: rgb(75, 75, 75);
 }
+@media screen and (max-width: 600px) {
+    .descrip {
+        size: 20px;
+        font-size: 12px;
+    }
+}
 
+/* top corner pictures */
+.top-left {
+    width:100%;
+    border-top-left-radius: 3px;
+}
+.top-right {
+    width:100%;
+    border-top-right-radius: 3px;
+}
+@media screen and (max-width: 600px) {
+    .top-left {
+        border-top-left-radius: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .top-right {
+        border-top-right-radius: 0px;
+    }
+}
 
 .photo-container {
     /* margin: 0px, 40px; */
@@ -320,3 +379,48 @@ hr {
 
 
 
+.copyright {
+    color: rgb(179, 179, 179);
+    position: relative;
+    right: 5%;
+    bottom: 30px;
+    list-style: none;
+    text-align: right;
+}
+@media screen and (max-width: 600px) {
+    .copyright {
+        width: 100%;
+        right: 0%;
+    }
+}
+
+
+
+
+#topButton {
+    display: none;
+    position: fixed;
+    top: 20px;
+    right: 10px;
+    z-index: 99;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: rgba(182, 182, 182, 0.2);
+    /* background-color: transparent; */
+    color: rgba(255,255,255,0.7);
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 50%;
+    animation: fade 0.5s;
+}
+@keyframes fade {
+    from {opacity: 0%}
+    to {opacity: 100%}
+}
+
+
+#topButton:hover {
+    background-color: rgb(189, 189, 189);
+}
