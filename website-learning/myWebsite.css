@@ -1,0 +1,215 @@
+/* resets for every style */
+/* some elements have default initial padding */
+/* *{
+    margin:0;
+    padding:0;
+} */
+    
+
+
+body {
+    background-color: #f4f4f4;
+    /* color:darkslategrey; */
+    color:coral;
+    /* font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: normal; */
+    font: normal 14px Arial, Helvetica, sans-serif; 
+    line-height: 1.5em; /*1.5x font height*/
+    margin:0;
+    
+
+}
+
+.clr {
+    clear:both;
+}
+
+.button {
+    background-color:#333;
+    color:#fff;
+    padding:10px, 15px;
+    border:none;
+}
+.button:hover {
+    background:red;
+    color:#fff;
+}
+
+/* for all links */
+a {
+    /* remove the underline */
+    text-decoration: none;
+    color:#000;
+}
+a:hover {
+    color:aquamarine;
+}
+a:active {
+    /* when u click on it */
+    color:red;
+}
+/* a.visited for if a links already been clicked on */
+
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+
+.box-1 {
+    background-color: #333333;
+    color: #fff;
+    border: 5px cornflowerblue solid;
+    border-top: 5px #cfb53b;
+
+    border-top-width:  10px;
+    border-bottom-width: 20px;
+    border-top-style: dotted;
+
+    /* distance bween box and words */
+    padding: 20px; 
+    /* outside of box */
+    margin: 10px;
+}
+
+/* will style any h1 within box-1 class */
+.box-1 h1  {
+    font-family: Tahoma;
+    font-weight: 400;
+    font-style: italic;
+    /* text-decoration: underline; */
+    text-transform: capitalize;
+    letter-spacing: 0.4em;
+    word-spacing: 1em;
+
+}
+
+.box-2 {
+    border: 3px dotted #ccc;
+    padding:20px;
+    /* 20 top/bottom, 10 left/right */
+    margin:20px 10px;
+}
+
+.categories {
+    border:10px #ccc solid;
+    padding: 10px;
+    margin: 10px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+}
+
+.categories h2 {
+    text-align: center;
+}
+
+.categories ul {
+    padding: 0;
+    padding-left: 10;
+    list-style: square;
+}
+
+.categories li {
+    padding-bottom: 8px;
+    border-bottom: dotted 1px #333;
+    /* list-style-image: use an image as the bullet point, resive pci first */
+    
+}
+
+.my-form {
+    padding:20px;
+
+}
+
+.my-form .form-group {
+    padding-bottom: 10px;
+    
+}
+
+.my-form label {
+    display:block;
+}
+.my-form input[type="text"], .my-form input[type="email"], .my-form textarea {
+    padding:8px;
+    width:100%;
+}
+
+.block {
+    float:left;
+    width:33.3%;
+    border:1px solid #ccc;
+    padding:10px;
+    /* includes the padding in width size */
+    box-sizing:border-box;
+}
+
+/* number sign for id */
+#main-block {
+    float:left;
+    width:70%;
+    padding:15px;
+    box-sizing: border-box;
+}
+#sidebar {
+    float:right;
+    width:30%;
+    background-color: #ccc;
+    color:#fff;
+    padding:15px;
+    box-sizing: border-box;
+    
+}
+
+.p-box {
+    margin-top:30px;
+    width:800px;
+    height:500px;
+    border:1px solid #000;
+    /* so the text is positioned relative to the box its in */
+    position: relative;
+    /* use ../  to go to another folder */
+    background-image: url(somehead.jpg);
+    /* background-size: cover; */
+    /* background-position: center; */
+    background-size: contain;
+    background-size: 850px;
+    /* move to right by 0px */
+    /* background-position: 0px; */
+    /* background-repeat: no-repeat; */
+    /* center horox and vert */
+    background-position: center center;
+}
+
+.p-box h1 {
+    position:absolute;
+    top:20px;
+    left:100px;
+}
+
+.p-box h2 {
+    position:absolute;
+    top:400px;
+    left:400px;
+}
+
+/* stays in same place always */
+/* .fix-me {
+    position:fixed;
+    top:300px;
+} */
+
+
+.my-list li:first-child  {
+    background: red;
+}
+.my-list li:last-child {
+    background: blue;
+}
+.my-list li:nth-child(3) {
+    background: yellow;
+}
+.my-list li:nth-child(even) {
+    background: green;
+}

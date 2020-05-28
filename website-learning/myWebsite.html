@@ -1,0 +1,232 @@
+<link rel = "stylesheet" type="text/css" href="myWebsite.css">
+<!-- alt z makes the window not as wide -->
+<!-- semaentic tags header,footer,aside,main,articel,nav,sections,details -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>mytitle</title>
+</head>
+<body>
+  <a href="gallery.html">Click For Gallery</a>
+  
+  <div class="container">
+    <div class="box-1">
+      <h1>howdy folks!</h1>
+      <h3> whomst</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corrupti, enim ex. Ad aliquam ab sit odio quibusdam, magni tempora veniam esse, dolor, atque maiores. Earum, voluptates alias! Eius, deserunt aliquam.</p>
+    </div>
+    <!-- server side programming stuff -->
+    <!-- shen you submit form, goes to process.php-->
+    <form class="my-form" action="process.php" method="POST">
+      <div class = "form-group">
+        <label>First Name</label>
+        <input type="text" name="firstName" placeholder="Enter First Name">
+      </div>
+      <div class = "form-group">
+        <label>Last Name</label>
+        <input type="text" name="lastName" placeholder="Enter Last Name">
+      </div>
+      <div class = "form-group">
+        <label>Email</label>
+        <input type="email" name="email">
+      </div>
+      <div class = "form-group">
+        <label>Message</label>
+        <textarea name="Message"></textarea>
+      </div>
+      <div class = "form-group">
+        <label>Gender</label>
+        <select name="gender">
+          <option value="owl">Owl</option>
+          <option value="neopolitan">Neoplitan Ice Cream</option>
+          <option value="racoon">Racoon</option>
+        </select>
+      </div>
+      <div class = "form-group">
+        <label>Age</label>
+        <input type="number" name="age" value ="18">
+      </div>
+      <div class = "form-group">
+        <label>Brithday</label>
+        <input type="date" name="birthday">
+      </div>
+      <input class="button" type="submit" name="submit" value="clickyhere">
+    </form>
+
+    <div class="block">
+      <h3>Headinggg</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur asperiores omnis, dolore tempore, facilis sit a totam sapiente dolores, ipsa debitis recusandae sequi dolor. Quae doloremque natus voluptate rerum explicabo!
+      </p>
+    </div>
+    <div class="block">
+      <h3>Headinggg22</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur asperiores omnis, dolore tempore, facilis sit a totam sapiente dolores, ipsa debitis recusandae sequi dolor. Quae doloremque natus voluptate rerum explicabo!
+      </p>
+    </div>
+    <div class="block">
+      <h3>Headinggg33</h3>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur asperiores omnis, dolore tempore, facilis sit a totam sapiente dolores, ipsa debitis recusandae sequi dolor. Quae doloremque natus voluptate rerum explicabo!
+      </p>
+    </div>
+
+    <div class="clr"></div>
+
+    <div id="main-block">
+      <h3>Heading</h3>
+      <p>
+        Lorem mainblock ipsum dolor sit amet consectetur adipisicing elit. Cum quibusdam alias, voluptatibus perspiciatis ipsum est perferendis magnam fugit dolorem provident doloremque ipsa officia dolor nihil nam ad aperiam. Repudiandae vitae deleniti quae soluta fuga libero dolores velit maxime debitis quaerat cum ex totam, reprehenderit id vel voluptates, tempore temporibus. Accusantium.
+      </p>
+    </div>
+
+    <div id="sidebar">
+      <p>
+        Lorem sidebar ipsum dolor sit amet consectetur adipisicing elit. Cum quibusdam alias, voluptatibus perspiciatis ipsum est perferendis magnam fugit dolorem provident doloremque ipsa officia dolor nihil nam ad aperiam.
+      </p>
+    </div>
+
+    <div class="clr"></div>
+
+    <!-- postiitoning -->
+    <div class="p-box">
+        <h1>how ya doin?</h1>
+        <h2> nvr mind</h2>
+    </div>
+
+    <ul class="my-list">
+      <li>list item</li>
+      <li>list item</li>
+      <li>list item</li>
+      <li>list item</li>
+      <li>list item</li>
+    </ul>
+
+
+    <!-- <a class="fix-me button" href="">gibblybutton</a> -->
+
+    <!-- button -->
+    <!-- use javascript to do some func -->
+    <!-- <button click="somefunction>">click me</button> -->
+    <button>Click MEH</button>
+
+    <div class="box-2">
+      <h1>why u gone</h1>
+      <h3> howmst</h3>
+      <p>Maecenas ut ullamcorper massa, vel vestibulum magna. Sed sit amet orci molestie, tincidunt leo eu, tempor dui. Maecenas sem est, fermentum eget turpis sit amet, pulvinar suscipit mi. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis rutrum neque vel nibh porta fringilla. Sed eleifend, odio nec consequat porta, sapien elit gravida urna, at malesuada leo purus eu leo. Vivamus non aliquet enim. Vivamus vel turpis tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum gravida risus. Pellentesque aliquam justo vel turpis dignissim, ut rhoncus lacus posuere. Duis est erat, aliquet ut tristique nec, ornare ac ex.
+      </p>
+    </div>
+
+    <div class="categories">
+      <h2>Categories</h2>
+      <ul>
+        <!-- # means top of page -->
+        <li><a href="#">thing 1</a></li>
+        <li><a href="#">thing 2</a></li>
+        <li><a href="#">thing 3</a></li>
+        <li><a href="#">thing 4</a></li>
+      </ul>
+    </div>
+
+
+  </div> <!-- container-->
+
+
+
+  <!-- opens image if clicked on -->
+  <a href="peachpit.png">
+    <img src="peachpit.png" alt="image tmp name" width="300" style="border: 5px solid lightblue">
+  </a>
+  
+  <!-- quotes -->
+  <blockquote cite = "place.com">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum quo cumque minus accusamus aspernatur beatae, natus eaque, dolor debitis dignissimos aperiam, quibusdam itaque necessitatibus odio at atque maxime harum officia?
+  </blockquote>
+
+  <!-- abbreveiations -->
+  <p> The <abbr title="Self-Contained Underwater Breathing Apparatus"> SCUBA </abbr>dude is cool</p>
+
+
+  <footer id="main-footer">
+    <p> Copyright &copy; 2020, by Me</p>
+  </footer>
+
+
+
+</body>
+</html>
+
+
+
+<!-- second part really  -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>main page title</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <h2> subtitle yo </h2>
+    <p class ="bigass-text">My first web page.</p>
+    //////////////need to create this in css file
+    <br>
+    <table border="2" cellpadding="10" cellspacing="0">
+      <tr>
+        <th></th>
+        <th colspan="2">Tv shows</th>
+        <th>Music</th>
+        <th>Movies</th>
+        <th>Humans</th>
+      </tr>
+      <tr>
+        <td rowspan="2">me n my friends' opinions</td>
+        <td>the guys in suits</td>
+        <td>the girls in suits</td>
+        <td>the indie gorls</td>
+        <td>boom boom</td>
+        <td>tom hanks</td>
+      </tr>
+      <tr>
+        <td>the guys detecive</td>
+        <td>the girl detective</td>
+        <td>the mumble rappers</td>
+        <td>boom pow</td>
+        <td>also tom hanks</td>
+      </tr>
+    </table>
+
+    <p>
+      <b>Maecenas ut ullamcorper massa, vel vestibulum magna.</b> <i> Sed sit amet orci molestie, tincidunt leo eu, tempor dui. Maecenas sem est, fermentum eget turpis sit amet, pulvinar suscipit mi.</i> Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Duis rutrum neque vel nibh porta fringilla. <hr>Sed eleifend, odio nec consequat porta, sapien elit gravida urna, at malesuada leo purus eu leo. Vivamus non aliquet enim. Vivamus vel turpis tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vestibulum gravida risus. Pellentesque aliquam justo vel turpis dignissim, ut rhoncus lacus posuere. Duis est erat, aliquet ut tristique nec, ornare ac ex.
+    </p>
+
+    Vivamus eu massa iaculis, hendrerit tellus sed, tempor nibh. Quisque eu turpis varius eros convallis maximus quis sed nulla. Praesent sagittis finibus eros cursus placerat. <br><br> Curabitur suscipit convallis cursus. Pellentesque commodo metus nisi, at gravida diam rhoncus sed. Phasellus laoreet ac velit at vulputate. Sed condimentum lacus in dignissim pretium.
+    <br><br>
+    <img src="https://via.placeholder.com/300x150">
+    <br>
+    <img src="peachpit.png" width="300" style="border: 5px solid lightblue">
+    <br>
+    <ul>
+      <li>things</li>
+      <li> pineapple</li>
+      <li> hemlock
+        <ul>
+          <li> the good stuff</li>
+          <li> the good good</li>
+        </ul>
+      </li>
+      <li>sugar</li>
+    </ul>
+
+
+
+  </body>
+</html>
+
+<hr>
+
+<a href="http://www.omfgdogs.com/#" target="_blank">doggos</a>

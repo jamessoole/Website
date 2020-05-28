@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="block1">A</div>
+        <div class="block2">B</div>
+        <div class="block3">C</div>
+      </div>
+
+    <style>
+        body {
+            margin: 0;
+        }
+        
+        .container {
+            display: flex;
+            flex-flow: row wrap;
+            height: 200px;
+            border: 2px solid grey;
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            /* box-sizing: border-box; */
+        }
+
+        .block1, .block2, .block3 {
+            flex: 1;
+            border: green;
+            /* below is styling for demo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+        }
+        .block1 {
+            background: pink;
+        }
+        .block2 {
+            background: red;
+            
+        }
+
+    </style>  
+</body>
+</html>
