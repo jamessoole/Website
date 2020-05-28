@@ -1,0 +1,251 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: lightgrey;
+    color: white;
+}
+
+
+/* SECTION */
+/* SHARE */
+/* SECTION */
+
+
+/* contains all the boxes */
+.box-container {
+    width:100%;
+    text-align: center;
+    align-content: center;
+}
+/* each box */
+.box {
+    width: 50%;
+    height: 400px;
+    padding: 20px;
+    /* width: 200px; */
+    /* border: solid green; */
+    float: left;
+    -ms-flex: 50%;
+    flex:50%;
+    max-width: 50%;
+    box-sizing: border-box;
+    /* next 3 lines make content centered within the boxes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width: 700px) {
+    .box {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+
+/* to make share icon smaller */
+/* .container-smaller {
+    width: 30%;
+    padding: 100px;
+    border: solid yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+
+
+/* main circle */
+.circle-box {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: linear-gradient(215deg, #63b7af, #347474);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* sticks */
+.stick1, .stick2 {
+    width: 50px;
+    height: 6px;
+    background-color: #35495e;
+    /* transform: translate(-5px, 10px) rotate(25deg); */
+    transition: all 0.3s ease-in-out;
+    border-radius: 20px;
+}
+.stick1 {
+    transform: translate(0px, 10px) rotate(25deg);
+}
+.stick2 {
+    transform: translate(-5px, -8px) rotate(-25deg);
+    position: absolute;
+}
+
+/* icons */
+.circle-box div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle-box div i {
+    /* font-style: 0; */
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* circles and locations */
+.github, .instagram, .linkedin {
+    width:17px;
+    height: 17px;
+    background-color: #35495e;
+    border-radius: 50%;
+    position: absolute;
+    transition: all 0.3s ease-in-out;
+}
+.github {
+    transform: translate(15px, -18px);
+}
+.instagram {
+    transform: translate(-20px);
+}
+.linkedin {
+    transform: translate(15px, 18px);
+}
+
+/* after clicked */
+.github.out, .instagram.out, .linkedin.out {
+    width: 100px;
+    height: 100px;
+}
+
+.github.out {
+    transform: translate(80px, -80px);
+}
+.instagram.out {
+    transform: translateX(-110px);
+}
+.linkedin.out {
+    transform: translate(80px, 80px);
+}
+
+.github.out:hover, .instagram.out:hover, .linkedin.out:hover {
+    background-color: #347474;
+}
+.github.out:hover i, .instagram.out:hover i, .linkedin.out:hover i {
+    color: rgb(221, 226, 225);
+}
+
+
+/* make sticks smaller */
+.stick1.out, .stick2.out {
+    width: 30px;
+    height:5px;
+}
+.stick1.out {
+    transform: rotate(-90deg);
+}
+.stick2.out {
+    transform: rotate(-90deg);
+}
+
+/* .circle-box.out {
+    width: 60px;
+    height: 60px;
+} */
+
+/* circle color */
+.circle-box div i.out {
+    opacity: 1;
+    font-size: 55px;
+    color: #ee8572;
+}
+
+
+
+/* SECTION */
+/* PLAYLIST */
+/* SECTION */
+
+
+.playlist-container {
+    /* background-color: #9c7e81; */
+    text-align: center;
+    margin-top: 20px;
+    color:white;
+
+}
+
+
+
+/* SECTION */
+/* CALCULATOR */
+/* SECTION */
+
+
+* {
+    outline: 0;
+    box-sizing: border-box;
+}
+
+/* body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e7b2a5;
+} */
+
+.calculator {
+    display: flex;
+    /* position: relative; */
+    width: 268px;
+    height: 310px;
+    padding: 15px;
+    background: #30475e;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px #ba6b57,
+        inset 0px 0px 10px #30465d;
+}
+
+.calculator input {
+    margin: 6px 8px;
+    width: 165px;
+    height: 42px;
+    line-height: 40px;
+    font-size: 18px;
+    font-family: sans-serif;
+    color: #e7b2a5;
+    padding-left: 12px;
+    padding-right: 12px;
+    /* text-align: right; */
+    letter-spacing: 1px;
+    background: transparent;
+    border-radius: 4px;
+    border: 1px solid #f1935c;
+}
+
+.calculator button {
+    cursor: pointer;
+    margin: 7px 7px;
+    width: 42px;
+    height: 42px;
+    font-size: 18px;
+    font-weight: bold;
+    background: transparent;
+    color: #f1935c;
+    border-radius: 4px;
+    border: 1px solid #f1935c;
+    /* learn */
+    transition: all 0.2s;
+}
+.calculator button:hover {
+    color: #30475e;
+    background: #e7b2a5;
+    border: 1px solid #e7b2a5;
+    /* background: #f1935c; */
+}

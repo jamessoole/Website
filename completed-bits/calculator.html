@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" type="text/css" href="calculator.css">
+    <title>Calculator</title>
+</head>
+<body>
+    
+    <div class="calculator">
+        <div>
+            <input type="text">
+            <button onclick="num1(); on()">1</button>
+            <button onclick="num2(); on()">2</button>
+            <button onclick="num3(); on()">3</button>
+            <button onclick="num4(); on()">4</button>
+            <button onclick="num5(); on()">5</button>
+            <button onclick="num6(); on()">6</button>
+            <button onclick="num7(); on()">7</button>
+            <button onclick="num8(); on()">8</button>
+            <button onclick="num9(); on()">9</button>
+            <button onclick="num0(); on()">0</button>
+
+            <button id="off6" onclick="dot(); off()">.</button>
+            <button id="off5" onclick="enter()">=</button>
+        </div>
+        <div>
+            <button onclick="empty(); off()">C</button>
+            <button id="off1" onclick="add(); off()">&plus;</button>
+            <button id="off2" onclick="sub(); off()">&minus;</button>
+            <button id="off3" onclick="mult(); off()">&times;</button>
+            <button id="off4" onclick="div(); off()">&div;</button>
+        </div>
+    </div>
+        
+    <script src="calculator.js"></script>
+</body>
+</html>
