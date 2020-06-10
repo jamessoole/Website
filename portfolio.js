@@ -18,3 +18,8 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+//disable rightclick on images
+$("body").on("contextmenu", "img", function(e) {
+    return false;
+  });

@@ -81,3 +81,16 @@ function enter() {
 //         enter();
 //     }
 // });
+
+
+/* SECTION */
+/* ORBS */
+/* SECTION */
+
+$(function() {
+    $(".circle").draggable();
+}) 
+
+$('.circle').click(function(e) {                    
+    document.querySelector(`.drag-me`).style.opacity = 0;
+});

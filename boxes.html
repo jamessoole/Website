@@ -56,6 +56,7 @@
             <div class="box" style="background: #204051;">
                 <p>Lorem333 ipsum dolor sit amet consectetur adipisicing elit. Voluptatem harum quibusdam fuga modi, nostrum facere unde enim! Similique nesciunt consequuntur suscipit labore dignissimos quos? Ullam enim ut dignissimos nihil esse?</p>
             </div>
+            <!-- calculator -->
             <div class="box" style="background: #e7b2a5;">
                 <div class="calculator">
                     <div>
@@ -82,6 +83,46 @@
                         <button id="off4" onclick="div(); off()">&div;</button>
                     </div>
                 </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <!-- orbs -->
+            <div class="box" style="background: #84a9ac; padding: 0;">
+                <!-- <h1 class="drag-me"> drag me</h1> -->
+                <div class="orb-container">
+                    <div class="circle circle1"></div>
+                    <div class="circle circle2"></div>
+                    <div class="circle circle1"></div>
+                    <div class="circle circle2"></div>
+                    <div class="circle circle1"></div>
+                    <div class="circle circle2"></div>
+                    <div class="circle circle1"></div>
+                    <div class="circle circle2"></div>
+                    <div class="circle circle1"></div>
+                    <div class="circle circle2"></div>
+                    <div class="circle circle1"></div>
+                    <div class="circle circle2"></div>
+                </div>
+                <svg>
+                    <filter id="gooey">
+                        <feGaussianBlur in="SourceGraphic" stdDeviation="10" />
+                        <feColorMatrix values="
+                        1 0 0 0 0
+                        0 1 0 0 0
+                        0 0 1 0 0
+                        0 0 0 20 -10
+                        "/>
+                    </filter>
+                </svg>
+
+                <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            </div>
+
+            <!--  -->
+            <div class="box" style="background: #3b6978;">
+                
             </div>
         </div>
     </div>
