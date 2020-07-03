@@ -248,14 +248,14 @@ from, to { border-color: transparent }
     margin-bottom: 40px;
     text-align: center;
 }
-.descrip {
+#descrip {
     margin: 0% 20%;
     text-align: justify;
     /* text-align-last: justify; */
     color: rgb(75, 75, 75);
 }
 @media screen and (max-width: 600px) {
-    .descrip {
+    #descrip {
         size: 20px;
         font-size: 12px;
     }
